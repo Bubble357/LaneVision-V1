@@ -1,0 +1,25 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 模型权重（禁止上传大文件）
+*.pt
+*.pth
+*.onnx
+
+# 视频与数据集
+*.mp4
+*.avi
+*.mov
+datasets/
+
+# 开发工具
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 虚拟环境（绝对禁止！）
+perception/
+venv/
+env/
