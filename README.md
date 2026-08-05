@@ -9,7 +9,8 @@
   <a href="#-技术栈">技术栈</a> •
   <a href="#-快速开始">快速开始</a> •
   <a href="#-性能表现">性能表现</a> •
-  <a href="#-效果展示">效果展示</a>
+  <a href="#-效果展示">效果展示</a> •
+  <a href="#-演示效果">演示效果</a>
 </p>
 
 ---
@@ -45,7 +46,7 @@
 ### 1️⃣ 克隆仓库
 
 ```bash
-git clone https://github.com/Bubble357/LaneVision-V1.git
+git clone https://github.com/GritHunter/LaneVision-V1.git
 cd LaneVision-V1
 ```
 
@@ -90,6 +91,14 @@ pip install -r requirements.txt
 
 ---
 
+## 🎬 演示效果
+
+![实时推理演示](output_video.gif)
+
+> 上方动图展示了 YOLOv8-seg 在 CPU 环境下对视频流的实时检测与分割效果。
+
+---
+
 ## 📂 项目结构
 
 ```
@@ -102,6 +111,7 @@ LaneVision-V1/
 ├── .gitignore               # Git 忽略规则
 ├── sample_ground_truth.jpg  # 真值示例图（visualize.py 输出）
 ├── sample_yolo_prediction.jpg # 模型预测示例图（infer.py 输出）
+├── output_video.gif         # 演示动图
 └── README.md                # 项目说明文档
 ```
 
@@ -116,6 +126,17 @@ LaneVision-V1/
 3. **跳帧推理**：在视频流处理中支持跳帧策略，进一步平衡 CPU 负载与画面流畅度。
 4. **代码与数据分离**：遵循工程规范，权重文件与数据集不纳入版本控制，通过脚本自动下载。
 
+---
+
+## 📅 更新日志
+
+- **2026.08.04**：完成视频流闭环与结果保存，CPU 环境下稳定 20 FPS。
+- **2026.08.03**：完成环境搭建、数据集可视化与单图推理验证。
+
+---
+
 ## 📄 License
 
 本项目仅供学习与展示使用。
+
+---
